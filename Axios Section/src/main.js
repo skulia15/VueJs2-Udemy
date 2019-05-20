@@ -1,9 +1,12 @@
-import Vue from 'vue'
+import Vuelidate from 'vuelidate'
 import App from './App.vue'
+import Vue from 'vue'
 
 import router from './router'
 import store from './store'
 import axios from 'axios'
+
+Vue.use(Vuelidate);
 
 axios.defaults.baseURL = 'https://vuejs-http-d3444.firebaseio.com';
 // axios.defaults.headers.common['Authorization'] = 'SOMETOKEN';
